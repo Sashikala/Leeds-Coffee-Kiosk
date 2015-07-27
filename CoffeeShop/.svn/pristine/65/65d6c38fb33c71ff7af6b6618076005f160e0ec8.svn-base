@@ -1,0 +1,44 @@
+import org.junit.*;
+import static org.junit.Assert.*;
+
+
+public class Coffee1Test {
+	
+	@Test
+	public void testCoffee1_1()
+		throws Exception {
+
+		Coffee1 result = new Coffee1();
+
+		assertNotNull(result);
+	}
+
+	
+	@Test
+	public void testNewScreen_1()
+		throws Exception {
+		Coffee1 fixture = new Coffee1();
+
+		fixture.NewScreen();
+
+	}
+
+	
+	@Before
+	public void setUp()
+		throws Exception {
+		
+	}
+
+	
+	@After
+	public void tearDown()
+		throws Exception {
+		
+	}
+
+	
+	public static void main(String[] args) {
+		new org.junit.runner.JUnitCore().run(Coffee1Test.class);
+	}
+}
